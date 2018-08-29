@@ -1,0 +1,24 @@
+== Reaction Fire==
+
+Reaction fire is when the player gets the opportunity to fire during the
+enemies turn.
+
+*Current*
+When an enemy moves an FOV check is done on all the opposing sides players. If
+the enemy is spotted the opposing creature will fire if he has the AP to take a
+SNAPSHOT left over from their previous turn.
+
+Since TE movement is tile by tile. A reactive response can occur from multiple
+creatures on every step as long as they have AP. I've yet to see another TBS
+game with such aggressive reaction fire.
+
+*   Chance of getting a shot off;
+    - Dexterity initiative.
+        - Determine percentage from DEX difference (target Dex / attacker Dex *
+          100 /2 
+        - Roll for defense against that percentage.
+        - Then roll 51/51?
+
+* Future?
+How to vary quality of the shot?
+

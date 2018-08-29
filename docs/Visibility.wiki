@@ -1,0 +1,10 @@
+== Visibility ==
+
+Each Creature has a Vision Attribute. This tells us how far the FOV algorithm
+will calc visible tiles for.
+
+*Proposed*
+When a tile with another factions creature is on it. A roll is made against the
+creatures stealth skill to determine whether it has been spotted. If
+successful, the creature is drawn on the map and marked visible. (NOT
+IMPLEMENTED YET)

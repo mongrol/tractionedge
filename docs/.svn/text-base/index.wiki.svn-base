@@ -1,0 +1,32 @@
+= Traction Edge Design Doc =
+
+Created with vimwiki. This documentation is covered under the same license as
+Traction Edge.
+
+== Entity Descriptions ==
+
+[[Creatures]]
+[[Creature Types]]
+[[Items]]
+
+== RPG Design ==
+
+[[Level System]]
+[[Skills]]
+[[Actions]]
+
+== World Design ==
+
+[[Maps]]
+[[Visibility]]
+[[Generation]]
+[[Population]]
+
+== Turn System ==
+
+[[Combat]]
+[[Reaction Fire]]
+
+== Game Progression ==
+
+[[Scaling]]

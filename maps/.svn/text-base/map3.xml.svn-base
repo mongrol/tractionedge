@@ -1,0 +1,36 @@
+<?xml version="2.0" encoding="UTF-8"?>
+<parameters>
+	<squadsize>2</squadsize>
+	<visibility>6</visibility>
+</parameters>
+<zone x1="32" y1="6" x2="35" y2="9">
+    <creature type="slither" count="2"/>
+</zone>
+<zone x1="11" y1="2" x2="24" y2="7">
+    <creature type="gimp" count="4"/>
+</zone>
+<zone x1="1" y1="8" x2="11" y2="15">
+    <creature type="slither" count="3"/>
+</zone>
+<zone x1="34" y1="23" x2="36" y2="25">
+    <startzone set="1"/>
+</zone>
+<introtext>
+Detective Oakshott...
+\
+\
+\"The well in the corner of the church contains no water and leads
+\down to a once hidden crypt of sorts. Go down there
+\and bring back some of these delicious mechanismo's. Oh and see 
+\if there's any villagers down there too. Our first concern is for
+\the public of course."
+</introtext>
+<resulttext>
+You report to Detective Oakshott...
+\
+\
+\"The villagers are missing, the region is overrun with clockwork
+\machinations and the local the parish appears to be somewhat
+\involved. We must find the source of this trouble, and quick,
+\there is more at stake here than you or I are allowed to reason."
+</resulttext>

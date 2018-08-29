@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Creatures</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<h1 id="toc_1">Creatures</h1>
+
+<h2 id="toc_1.1">Attributes</h2>
+<p>
+Currently rolled by 1d10+5
+</p>
+
+<p>
+<strong>Strength</strong>
+</p>
+
+<p>
+Affects;
+</p>
+<ul>
+<li>
+Encumberance
+
+<li>
+Accuracy (modded with weapon weight)
+
+<li>
+Melee damage
+
+<li>
+Melee chance to hit (modded with weapon weight)
+
+</ul>
+
+<p>
+<strong>Dexterity</strong>
+</p>
+
+<p>
+Affects;
+</p>
+<ul>
+<li>
+Accuracy (melee and ranged)
+
+<li>
+Accuracy is increased more with lighter weapons
+
+<li>
+Dodging
+
+<li>
+Reaction fire (decreased time to reaction)
+
+</ul>
+
+<p>
+<strong>Intelligence</strong>
+</p>
+
+<p>
+Affects;
+</p>
+<ul>
+<li>
+XP gain
+
+<li>
+Reaction fire (anticipation)
+
+</ul>
+
+<p>
+Possibles;
+</p>
+<ul>
+<li>
+Identify weapons found
+
+<li>
+Squad intell increases research speed
+
+<li>
+Might put requirements on weapons
+
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+/*
+ *  NameGenerator.cpp
+ *  TractionEdge
+ *
+ *  Created by Steven Hamilton on 20/12/09.
+ *  Copyright 2009 scorch.org. All rights reserved.
+ *
+ */
+
+#include "NameGenerator.h"
+#include <stdlib.h>
+
+NameGenerator::NameGenerator()
+{
+    firstNames.push_back("Arthur");
+    firstNames.push_back("Alan");
+    firstNames.push_back("Alfred");
+    firstNames.push_back("Albert");
+    firstNames.push_back("Alex");
+    firstNames.push_back("Andrew");
+    firstNames.push_back("Archie");
+    firstNames.push_back("Arnold");
+    firstNames.push_back("Ben");
+    firstNames.push_back("Bennet");
+    firstNames.push_back("Bernard");
+    firstNames.push_back("Byron");
+    firstNames.push_back("Calvin");
+    firstNames.push_back("Charles");
+    firstNames.push_back("Daniel");
+    firstNames.push_back("David");
+    firstNames.push_back("Edgar");
+    firstNames.push_back("Edmund");
+    firstNames.push_back("Edward");
+    firstNames.push_back("Ed");
+    firstNames.push_back("Frank");
+    firstNames.push_back("Fred");
+    firstNames.push_back("Geoffrey");
+    firstNames.push_back("George");
+    firstNames.push_back("Gilbert");
+    firstNames.push_back("Harland");
+    firstNames.push_back("Harold");
+    firstNames.push_back("Harvey");
+    firstNames.push_back("Henry");
+    firstNames.push_back("Horace");
+    firstNames.push_back("Hugh");
+    firstNames.push_back("Jasper");
+    firstNames.push_back("Jack");
+    firstNames.push_back("John");
+    firstNames.push_back("Joe");
+    firstNames.push_back("Les");
+    firstNames.push_back("Mark");
+    firstNames.push_back("Maxwell");
+    firstNames.push_back("Merrill");
+    firstNames.push_back("Morris");
+    firstNames.push_back("Ned");
+    firstNames.push_back("Nick");
+    firstNames.push_back("Oliver");
+    firstNames.push_back("Ollie");
+    firstNames.push_back("Paul");
+    firstNames.push_back("Patrick");
+    firstNames.push_back("Pat");
+    firstNames.push_back("Pete");
+    firstNames.push_back("Ralph");
+    firstNames.push_back("Robert");
+    firstNames.push_back("Rob");
+    firstNames.push_back("Sam");
+    firstNames.push_back("Stan");
+    firstNames.push_back("Tom");
+    firstNames.push_back("Thomas");
+    firstNames.push_back("Victor");
+    firstNames.push_back("Walter");
+    firstNames.push_back("Wilfred");
+    firstNames.push_back("William");
+    firstNames.push_back("Willy");
+
+    surnames.push_back("Ainsworth");
+    surnames.push_back("Aldridge");
+    surnames.push_back("Archer");
+    surnames.push_back("Ashton");
+    surnames.push_back("Atkins");
+    surnames.push_back("Atwater");
+    surnames.push_back("Atwood");
+    surnames.push_back("Bagley");
+    surnames.push_back("Bagstock");
+    surnames.push_back("Baker");
+    surnames.push_back("Banks");
+    surnames.push_back("Bardell");
+    surnames.push_back("Barton");
+    surnames.push_back("Bashford");
+    surnames.push_back("Batterbee");
+    surnames.push_back("Beard");
+    surnames.push_back("Beggley");
+    surnames.push_back("Belcher");
+    surnames.push_back("Bennett");
+    surnames.push_back("Bicker");
+    surnames.push_back("Blundy");
+    surnames.push_back("Barclay");
+    surnames.push_back("Boodle");
+    surnames.push_back("Bowles");
+    surnames.push_back("Bramble");
+    surnames.push_back("Brattle");
+    surnames.push_back("Bray");
+    surnames.push_back("Brewer");
+    surnames.push_back("Brick");
+    surnames.push_back("Bridges");
+    surnames.push_back("Brogley");
+    surnames.push_back("Brownlow");
+    surnames.push_back("Bucket");
+    surnames.push_back("Buckle");
+    surnames.push_back("Butcher");
+    surnames.push_back("Butler");
+    surnames.push_back("Cadwell");
+    surnames.push_back("Castle");
+    surnames.push_back("Catchpole");
+    surnames.push_back("Chester");
+    surnames.push_back("Chickering");
+    surnames.push_back("Chuffley");
+    surnames.push_back("Cobb");
+    surnames.push_back("Cook");
+    surnames.push_back("Cooper");
+    surnames.push_back("Corney");
+    surnames.push_back("Cox");
+    surnames.push_back("Crabb");
+    surnames.push_back("Cuttle");
+    surnames.push_back("Dalley");
+    surnames.push_back("Darknoll");
+    surnames.push_back("Datchery");
+    surnames.push_back("Dawkins");
+    surnames.push_back("Duncke");
+    surnames.push_back("Eagleden");
+    surnames.push_back("Emerson");
+    surnames.push_back("Fairbear");
+    surnames.push_back("Fielding");
+    surnames.push_back("Fisher");
+    surnames.push_back("Flint");
+    surnames.push_back("Fordham");
+    surnames.push_back("Gosling");
+    surnames.push_back("Granger");
+    surnames.push_back("Gridley");
+    surnames.push_back("Griffin");
+    surnames.push_back("Gunn");
+    surnames.push_back("Hedgecock");
+    surnames.push_back("Hopperton");
+    surnames.push_back("Huddleston");
+    surnames.push_back("Igglesden");
+    surnames.push_back("Inchcombe");
+    surnames.push_back("Kettle");
+    surnames.push_back("Kidham");
+    surnames.push_back("Kipps");
+    surnames.push_back("Lamb");
+    surnames.push_back("Larkin");
+    surnames.push_back("Lucke");
+    surnames.push_back("Lovegrove");
+    surnames.push_back("Lurcock");
+    surnames.push_back("Mannering");
+    surnames.push_back("March");
+    surnames.push_back("Maycock");
+    surnames.push_back("Midgeley");
+    surnames.push_back("Mills");
+    surnames.push_back("Miller");
+    surnames.push_back("Mockett");
+    surnames.push_back("Moody");
+    surnames.push_back("Mortimer");
+    surnames.push_back("Muggeridge");
+    surnames.push_back("Mugridge");
+    surnames.push_back("Napper");
+    surnames.push_back("Necket");
+    surnames.push_back("Nethersole");
+    surnames.push_back("Norris");
+    surnames.push_back("Nottle");
+    surnames.push_back("Oakly");
+    surnames.push_back("Oldfield");
+    surnames.push_back("Palmer");
+    surnames.push_back("Parrott");
+    surnames.push_back("Perch");
+    surnames.push_back("Philpott");
+    surnames.push_back("Pinch");
+    surnames.push_back("Pocket");
+    surnames.push_back("Popkiss");
+    surnames.push_back("Pott");
+    surnames.push_back("Potts");
+    surnames.push_back("Potter");
+    surnames.push_back("Ramsbottom");
+    surnames.push_back("Rowley");
+    surnames.push_back("Smith");
+    surnames.push_back("Stag");
+    surnames.push_back("Trigg");
+    surnames.push_back("Turner");
+    surnames.push_back("Wickham");
+    surnames.push_back("Wilkins");
+}
+
+NameGenerator::~NameGenerator(){}
+
+std::string NameGenerator::name()
+{
+    std::string name;
+    int iFirst=rand() % firstNames.size();
+    int iLast=rand() % surnames.size();
+    name=firstNames[iFirst]+" "+surnames[iLast];
+    return name;
+}

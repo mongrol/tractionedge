@@ -1,0 +1,24 @@
+How to build Traction Edge
+
+Requirements;
+
+SFML 1.6 or greater 		http://www.sfml-dev.org
+cmake 2.8 or greater		http://www.cmake.org
+
+* Ubuntu/Debian Squeeze can do the following to get dependancies;
+
+sudo apt-get install build-essential cmake libsfml-dev libglew-dev
+
+To build, open a terminal, cd into the main directory and do
+
+cmake ./
+make
+
+To run;
+
+./tractionedge
+
+
+You can move the binary anywhere as long as the fonts, images, maps and
+docs folders go with it. You also must keep the LICENSE file since it's
+under the GPL.

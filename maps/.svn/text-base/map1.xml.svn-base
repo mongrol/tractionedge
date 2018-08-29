@@ -1,0 +1,42 @@
+<?xml version="2.0" encoding="UTF-8"?>
+<parameters>
+	<squadsize>3</squadsize>
+	<visibility>8</visibility>
+</parameters>
+<zone x1="19" y1="1" x2="38" y2="25">
+    <creature type="slither" count="1"/>
+</zone>
+<zone x1="1" y1="10" x2="5" y2="20">
+    <startzone set="1"/>
+</zone>
+<introtext>
+Detective Oakshott approaches....
+\
+\
+\"Congratulations Constable. Your staunch upholding of justice
+\in the regions has come to the attention of certain courts
+\and they have instructed me to fill an recent vacancy in our
+\ranks by recruiting a chap of your very calibre.
+\
+\That said, I am delighted to present you with a place in Her
+\Majesty's Bureau of Fairly Unusual Occurances. You may not
+\of caught word of this particular department of Her Majesties
+\New Police but be assured your familiarity will ensured.
+\
+\AS your first assignment I'd like you to investigate a farm in
+\the northern shires. There's been reports of some strange
+\noises. Send a couple of your officers and help yourself to
+\the armoury. You'll find us  better equipped than your
+\regional parishes."
+</introtext>
+<resulttext>
+You report to Detective Oakshott...
+\
+\
+\"Clockwork snakes you say! Well that is quite unusual but
+\these are unusual times we live in. Why the very establishment
+\of our New Police in it's visible and less visible guises is
+\proof of such uncertain times. Nevertheless, I waffle. The
+\scrap of these machines will come in handy. We have great
+\minds behind us Detective, great minds indeed."
+</resulttext>

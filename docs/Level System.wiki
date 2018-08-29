@@ -1,0 +1,40 @@
+==Level System==
+
+===Asherons Call Type Proposal===
+XP can be spent on skills between levels. Apon reaching a level threshhold the
+creature is "levelled up" and granted attribute points to spend.
+
+Questions?
+Do we grant every creature every skill at the start?
+    - Yes. All skills are given randomly rolled stats.
+    - All skills are visible. Reduces "classes"
+
+Or do we let players "buy" skills instead of attribute points?
+    - Don't like this. Less balance control over time.
+    - Removes a seperate reward. Incentive to make attribs rewarding.
+
+Perhaps you can "buy" training to boost low skills up to usable levels?
+    - Let's try and avoid this. New recruits should not be useless at later
+      levels.
+
+When creature is created do they get some randomly boosted skills?
+    - This gives more variety to randomly generated squad members
+    - Hopefully dice rolls will avoid the need to deliberately do this.
+
+*How it works*
+* 8 players are randomly generated. They have all skills with random attributes
+* Players gain XP from killing mobs.
+* XP is per player. There isn't a pool to be shared amongst them.
+* After each map XP can be pumped into any available skills.
+* XP can be saved for later.
+* When certain XP is reached the player levels up. He is then granted an
+  attribute point to spend on STR/DEX/INT
+* More skills become available through the tech tree. All creatures get them
+  and are randomly set as per every other skill.
+
+*Rewards*
+    Players are continually rewarded after every map without having to wait until level up.
+Level up provides an extra reward and a "pause" in the gameplay for the player
+to think about the direction he is taking his squad.
+
+

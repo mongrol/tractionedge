@@ -1,0 +1,63 @@
+== Generation ==
+
+This covers the procedural generation of maps and their population of items and
+creatures.
+
+*Overview*
+
+The PCG systems need to be able to create both overland and underground map
+types. The techniques may be different for each. 
+
+*Overland Map Proposal*
+The first attempt was by dividing the map into a BSP. This gave varying block
+sizes but proved difficult to implement due to blocks being inside other
+blocks.
+
+This next attempt is simpler and follows a more XCOM like system. 
+
+1) We divide the map into fixed sized squares (5x5 to start with).
+2) We generate a list of buildings based on our scenario type. Buildings make
+require more than one square to be placed.
+3) Starting with the largest building. Scrape the map looking for free squares
+to hold the building.
+4) Place the building in the squares.
+5) Mark squares as being populated.
+
+
+*Challenges*
+How do we cater for buildings larger than a square? I propose to have the
+MapSquares hold the building data directly. When the building is placed
+in the node we copy the relevant portion of data directly into the square.
+
+*Data & Files*
+
+Buildings are divided into classes. Small and Large. 5x5 and 10x10. We should
+have a scenario file that holds the parameters of each scenario. How many small
+and large buildings and some kind of indication or zone of where to randomly
+place them. e.g. Farm's have larger buildings in the middle of the map.
+Villages may have a church or main hall at the right hand side.
+
+We could use the original static parameter files for this but those are for
+story elements which would describe the scenario only. The game system should
+determine the diffculty level. The scenario file describes the map components
+only. This should include wildlife types.
+
+*Data Files*
+* <scenario>.xml
+parameter file for the landscape/scenario type. Contains the following;
+- Number of small buildings
+- Number of large buildings
+- Where to place buildings
+- TODO: class of monsters
+* <scenario>_<size>.tmx
+Tiled map files of buildings.
+
+*Classes*
+
+* MapGenerator
+
+* Building
+
+* MapSquare
+
+

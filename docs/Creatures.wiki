@@ -1,0 +1,64 @@
+= Creature Entity =
+
+== Attributes ==
+Currently rolled by 3d6
+20 should be max.
+Level up will gain 1 point to spend on attribs.
+
+*Strength*
+
+Affects;
+* Encumberance
+* Accuracy (modded with weapon weight)
+* Melee damage
+* Melee chance to hit (modded with weapon weight)
+
+*Dexterity*
+
+Affects;
+* Accuracy (melee and ranged)
+- Accuracy is increased more with lighter weapons
+* Dodgingused 
+* Reaction fire (decreased time to reaction)
+
+*Intelligence*
+
+Affects;
+* XP gain
+* Reaction fire (anticipation)
+
+Possibles;
+* Identify weapons found
+* Squad intell increases research speed
+* Might put requirements on weapons
+
+*Vision*
+* Determines range of visible tiles
+
+*Hit Points*
+* Health of the creature. Decreased by taking damage
+* Currently determined by STR + 1d10
+* Increases on Level up (=HP + Constant * Level)
+
+Future;
+1 shot deaths should be possible in the first level or two.
+
+*Action Points*
+* Number of points to spend on actions per turn
+* Currently DEX + 4d6
+* Increases when levelling up. Should also be boosted by Dex increases
+
+*XP*
+* Currently increased by killing monsters. See [[Level System]]
+
+*XP Value*
+* Base value for determining the xp granted when creature is killed
+
+*Encumberance*
+* How much the creature can carry.
+* Currently STR*10
+* May be expanded by pack items?
+* May be a mod for reactive actions (Reactive Fire, Dodge etc)
+* May be a mod to increase moveCosts
+
+

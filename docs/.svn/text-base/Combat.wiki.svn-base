@@ -1,0 +1,39 @@
+== Turn Combat ==
+
+=== Ranged ===
+
+Squad member chooses a target tile. A accuracy (tolerance) angle is then calculated by a
+number of modifiers. Finally a random angle is chosen within that tolerance and
+the project is fired.
+
+
+*Current Angle Mod*
+* First tolerence angle is a definite hit on one block at weapon->range.
+* Creatures skill level for selected weapon
+    - 1/(skill/100)
+* Firing mode (Snap or Aim)
+    - Aim = 1
+    - Snap = 0.6
+* DEX mod=dexterity/20*(100/weapon->weight)*strMod (STR/20)
+
+*New Mods on Angle*
+* Creature skill level for selected weapon DONE
+* Firing mode DONE
+* STR mods how much weapon weight affects the DEX mod. DONE
+* DEX modded with weapon weight. DONE.
+
+*Future*
+* Have accuracy property on items. Rifles shoot true. Pistol, blunderbusses can
+  never be truly accurate.
+
+=== Damage ===
+
+* Damage is increased or decreases based on a base Range attribute.
+* TODO: Vary damage by some random amount. +-50%?
+
+=== Melee ===
+
+* Damage is Weapon.damage*strength/10. Meaning a str of 10 your damage would
+  equal the weapon damage. Potentially doubling the damage when we hit 20.
+* Might put in a random mod at some point although the stats are so course it
+  may not be usable.

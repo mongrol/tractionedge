@@ -1,0 +1,42 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/tractionedge.dir/FSMState.cpp.o"
+  "CMakeFiles/tractionedge.dir/fov.cpp.o"
+  "CMakeFiles/tractionedge.dir/UIOptionsScreen.cpp.o"
+  "CMakeFiles/tractionedge.dir/UIView.cpp.o"
+  "CMakeFiles/tractionedge.dir/Creature.cpp.o"
+  "CMakeFiles/tractionedge.dir/UIResultsScreen.cpp.o"
+  "CMakeFiles/tractionedge.dir/Saver.cpp.o"
+  "CMakeFiles/tractionedge.dir/Engine.cpp.o"
+  "CMakeFiles/tractionedge.dir/UIIntroScreen.cpp.o"
+  "CMakeFiles/tractionedge.dir/DisplayManager.cpp.o"
+  "CMakeFiles/tractionedge.dir/main.cpp.o"
+  "CMakeFiles/tractionedge.dir/tinyxml.cpp.o"
+  "CMakeFiles/tractionedge.dir/GameWorld.cpp.o"
+  "CMakeFiles/tractionedge.dir/EngineState.cpp.o"
+  "CMakeFiles/tractionedge.dir/NameGenerator.cpp.o"
+  "CMakeFiles/tractionedge.dir/Map.cpp.o"
+  "CMakeFiles/tractionedge.dir/Utility.cpp.o"
+  "CMakeFiles/tractionedge.dir/tinyxmlparser.cpp.o"
+  "CMakeFiles/tractionedge.dir/AnimManager.cpp.o"
+  "CMakeFiles/tractionedge.dir/tinystr.cpp.o"
+  "CMakeFiles/tractionedge.dir/UIMatchScreen.cpp.o"
+  "CMakeFiles/tractionedge.dir/UIGameOverScreen.cpp.o"
+  "CMakeFiles/tractionedge.dir/MapGenerator.cpp.o"
+  "CMakeFiles/tractionedge.dir/Terrain.cpp.o"
+  "CMakeFiles/tractionedge.dir/blah.cpp.o"
+  "CMakeFiles/tractionedge.dir/UITitleScreen.cpp.o"
+  "CMakeFiles/tractionedge.dir/GfxSFML.cpp.o"
+  "CMakeFiles/tractionedge.dir/FSM.cpp.o"
+  "CMakeFiles/tractionedge.dir/SquadAI.cpp.o"
+  "CMakeFiles/tractionedge.dir/UIEmbarkScreen.cpp.o"
+  "CMakeFiles/tractionedge.dir/Position.cpp.o"
+  "CMakeFiles/tractionedge.dir/tinyxmlerror.cpp.o"
+  "CMakeFiles/tractionedge.dir/Item.cpp.o"
+  "tractionedge.pdb"
+  "tractionedge"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang CXX)
+  INCLUDE(CMakeFiles/tractionedge.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

@@ -1,0 +1,29 @@
+== Maps ==
+
+*Map Object*
+
+The map is a fixed size currently 40x30. This should move to a scrollable
+window style for larger, flexible map sizes.
+
+Map is a 2d vector on Terrain objects.
+
+*Terrain Object*
+* moveCost:     AP cost to move over this tile. This should be a base and can
+*               be modded by Creature skills/attribs
+* Height:       0 = flat, 1 = 50% waist high, 2 = Full height. Generally you cannot
+                pass height 2.
+* totalHitPoints:   The terrain's starting HP.
+* currentHitPoints: The terrain's current HP.
+* deadTerrain:      the gfxId_t of the terrain it should be replaced with when
+                    destroyed.
+* isPassable:   Is a creature allowed to pass this. Generaly determined by
+                height.
+* isTranslucent: Can the FOV see through the terrain
+* isVisible:     Is it currently in view. As below? The terrain object
+                shouldn't care whether it is visible or not. Bad design here.
+* wasVisible:   Has it ever been seen before? Used to show the darker areas of
+                the map. Ideally the terrain object shouldn't care about this
+                and a seperate vector held to contain wasVisible tiles. (better
+                design).
+
+

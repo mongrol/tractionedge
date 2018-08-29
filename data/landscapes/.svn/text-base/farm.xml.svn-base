@@ -1,0 +1,11 @@
+<?xml version="2.0" encoding="UTF-8"?>
+<file size="10" name="farm_10x10.tmx" items="3"></file>
+<file size="5" name="farm_5x5.tmx" items="6"></file>
+<building size="5" count="3"></building>
+<building size="10" count="1"></building>
+<zone x1="19" y1="1" x2="38" y2="25">
+    <creature type="slither" count="3"/>
+</zone>
+<zone x1="2" y1="18" x2="5" y2="20">
+    <startzone set="1"/>
+</zone>

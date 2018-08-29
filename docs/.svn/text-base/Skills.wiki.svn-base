@@ -1,0 +1,27 @@
+== Skills ==
+
+Skills are integers owned by all creatures. All creatures have a stat for every
+available skill whether good at it or not. Skills are used to determine success
+during actions and item use.
+
+Additional skills are unlocked through the tech tree
+
+Current roll:   4d10
+
+== List of Starting Skills ==
+
+*Ranged*
+* Handguns      -   Pistols
+* Carbines      -   Blunderbus, Musketoons
+* Long Guns     -   Muskets
+
+*Melee*
+* Short Blades  -   Daggers etc
+* Long Blades   -   Swords
+* Bludgeon      -   Truncheons
+
+*Physical*
+* Spotting        -   Ability to spot creatures
+* Stealth         -   Ability to avoid being spotted
+* Mobility        -   Can reduce moveCosts
+

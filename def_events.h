@@ -1,0 +1,71 @@
+/*
+ *  def_events.h
+ *  tractionedge
+ *
+ *  Created by Steven Hamilton on 27/03/10.
+ *  Copyright 2010 scorch.org. All rights reserved.
+ *
+ */
+
+#ifndef	__DEF_EVENTS_H__
+#define __DEF_EVENTS_H__
+
+enum event_t {
+	KEY_RIGHT,
+	KEY_LEFT,
+	KEY_UP,
+	KEY_DOWN,
+	KEY_UP_RIGHT,
+	KEY_UP_LEFT,
+	KEY_DOWN_RIGHT,
+	KEY_DOWN_LEFT,
+	KEY_ESCAPE,
+	KEY_RETURN,
+	KEY_TAB,
+	KEY_SPACE,
+    KEY_A,
+    KEY_B,
+    KEY_C,
+    KEY_D,
+    KEY_E,
+    KEY_F,
+    KEY_G,
+    KEY_H,
+    KEY_I,
+    KEY_J,
+    KEY_K,
+    KEY_L,
+    KEY_M,
+    KEY_N,
+    KEY_P,
+	KEY_R,
+	KEY_S,
+	KEY_W,
+    KEY_Y,
+    KEY_CTRL_Q,
+	KEY_CTRL_S,
+    KEY_PLUS,
+    KEY_MINUS,
+    ACTION_SELECTPLAYER,
+	ACTION_TARGET,
+	ACTION_ATTACK,
+	ACTION_LOOK,
+	ACTION_FIRING_MODE,
+	EVENT_NULL,
+	EVENT_MATCH_LOST,
+	EVENT_MATCH_WIN,
+	EVENT_ANIMATING,
+	EVENT_AI_TURN,
+	MODE_HELP,
+	EVENT_NEW_GAME,
+	EVENT_CONTINUE_GAME,
+	EVENT_SAVE_AND_QUIT,
+	EVENT_CONTINUE,
+	EVENT_CANCEL,
+	EVENT_REDRAW,
+    EVENT_RESETUP,
+    EVENT_OPTIONS,
+    EVENT_QUIT
+};
+
+#endif

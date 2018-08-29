@@ -1,0 +1,34 @@
+== Items ==
+
+All items are derived from the same Item.h class. Their type are defined by
+their properties
+
+*Skill*
+All items have a Skill string that define the skill needed to use them.
+
+*Weight*
+The weight of the item. 
+    - When held in inventory is adds to the players encumberance.
+    - Currently hardcoded (MAGIC NUMBERS!!!)
+    - How to handle mods that affect weight?
+
+*Position*
+Grid position of the item when on the ground.
+    - This should probably be updated with player movements.
+
+=== Weapon Properties ===
+
+*damage*
+How much base damage the weapon does
+* Currently hardcoded in def_items.h
+* Make it reduce with range.
+* Mods can make damage reduce less with range.
+* Mods could reduce the change of his hitting a low tile over range too.
+
+*range*
+How far the weapon can reach.
+* Used to detemine the base tolerance angle that would guarantee a hit at this
+  range.
+* Weapons should always be able to range further than visibility
+* Damage should reduce with range
+

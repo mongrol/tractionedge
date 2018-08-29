@@ -1,0 +1,17 @@
+== Actions ==
+
+Actions are performed by the player. Moving, opening doors, spotting, firing,
+attacking. Success is determined usually by a combination of the creatures
+attributes, the skill involved, the item and any challenging attributes on
+opposing objects or creatures.
+
+All actions have an AP cost. Some are fixed, others can be reduced by a skill
+or item boost.
+
+| *Skill*       | *Base AP Cost*      | *Modified By* |   |   |
+| Moving        | moveCost of Terrain | ?             |   |   |
+| Firing Ranged | ?                   | ?             |   |   |
+| Opening Doors | ?                   | ?             |   |   |
+
+
+

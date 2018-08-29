@@ -1,0 +1,64 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<title>MRPAS reference</title>
+			<style media="screen" type="text/css"><!--
+p { color: #FFFFFF; font-weight: normal; font-size: 14px; font-family: "Arial"; text-align: justify }
+p.file { color: #FFFFFF; font-weight: bold; font-size: 14px; font-family: "Arial"; text-align: justify }
+h1 { color: #FFFFFF; font-weight: bold; font-size: 18px; font-family: "Arial"; text-align: center; text-transform: uppercase }
+h2 { color: #000000; font-weight: bold; font-size: 14px; font-family: "Arial"; background-color: #DDDDDD; text-align: justify; text-transform: uppercase }
+h3 { color: #FFFFFF; font-style: normal; font-weight: normal; font-size: 14px; font-family: "Arial"; text-align: center }
+code { color: #FFFFFF; font-style: normal; font-weight: normal; font-size: 14px; font-family: "Courier"; text-align: left; }
+a { color: #FFFFFF; font-weight: normal; font-size: 14px; font-family: "Arial"; text-decoration: none}
+a:active { color: #FFFFFF; font-weight: normal; font-size: 14px; font-family: "Arial"; text-decoration: none}
+a:hover { color: #CCCCCC; font-weight: normal; font-size: 14px; font-family: "Arial"; text-decoration: none}
+a:link { color: #FFFFFF; font-weight: normal; font-size: 14px; font-family: "Arial"; text-decoration: none}
+a:vlink { color: #FFFFFF; font-weight: normal; font-size: 14px; font-family: "Arial"; text-decoration: none}
+--></style>
+	</head>
+
+	<body bgcolor="#000000">
+		<div align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="75%">
+			<tr valign="top">
+        <td bgcolor="000000">
+          <h1>Field of view</h1>
+          <hr />
+          <p class="file">FOV.HPP, FOV.CPP</p>
+          <p>Mingos' Restrictive Precise Angle Shadowcasting (MRPAS) - an experimental field of view (FOV) calculation method.</p>
+		  <p>For information about how it works, please refer to <a href="http://umbrarumregnum.110mb.com/art9_fov.php">THIS ARTICLE</a>.</p>
+          <hr />
+          <code>int Fov::fovMap[MAX_X][MAX_Y]</code>
+          <p>An array that contains the visibility status of all the map's cells. Please change the constants in brackets to match your map's dimensions. Alternatively, you may delete this array and use whatever data your game uses.</p>
+          <p>This array should be referenced after the FOV has been calculated, otherwise it'll either contain rubbish or the state of the previous FOV calculation).</p>
+          <p>Usage:</p>
+          <code>if (Fov::fovMap[x][y] == 1) { ... }</code>
+          <hr />
+		  <code>bool Fov::transparencyMap[MAX_X][MAX_Y]</code>
+          <p>This array stores the information about the transparent/opaque status of all the map's cells. As above, please change the numbers in brackets to match your map's dimensions. Alternatively, you may delete this and use whatever data your game uses.</p>
+          <p>Usage: this array is private; it shouldn't be called inside your code.</p>
+		  <hr />
+          <code>void Fov::prepareTransparencyMap (void)</code>
+          <p>Copies the transparency status of all the map's cells into the transparencyMap array. Please modify this method, as it's written to use UR's map architecture. Alternatively, you might delete it completely together with the aforementioned array and modify the FOV calculation method to use your own data.</p>
+          <p>This method should be called upon entering a map, generating it or modifying its cells' transparency status (e.g. opening a door, digging a wall, chopping a tree, etc.)</p>
+          <p>Usage:</p>
+          <code>Fov::prepareTransparencyMap();</code>
+          <hr />
+		  <code>void Fov::calculateQuadrant (int sourceX, int sourceY, int dx, int dy, int range, int arraySize)</code>
+          <p>This method calculates the FOV in one quadrant.</p>
+          <p>Usage: this method is private; it shouldn't be called inside your code.</p>
+		  <hr />
+          <code>void Fov::calculate(int sourceX, int sourceY, int range)</code>
+          <p>Calculates the field of view. Please refer to the source code to see how it works.</p>
+          <p>To use this method, it is necessary to specify the origin coordinates. Range is optional. If not specified or explicitly set to a value of 0 or less, the range will be "unlimited".</p>
+          <p>Usage:</p>
+          <code>Fov::calculate(PC.x,PC.y); //unlimited range<br />
+          Fov::calculate(i,j,15); //start from [i,j] and use a range of 15 cells</code>
+          <hr />
+				</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
